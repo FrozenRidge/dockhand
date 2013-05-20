@@ -1,0 +1,26 @@
+{
+  "name": "dockhand",
+  "version": "0.0.0",
+  "description": "Node.JS interface to Docker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/FrozenRidge/dockhand.git"
+  },
+  "keywords": [
+    "docker",
+    "lxc",
+    "container"
+  ],
+  "author": "Niall O'Higgins",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "dcaff3752117775a5425f8882cb3ce1c641210c3",
+  "dependencies": {
+    "async": "~0.2.8",
+    "request": "~2.21.0"
+  }
+}
