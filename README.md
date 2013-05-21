@@ -57,3 +57,26 @@ ls.stdout.on('data', function(data) {
 I don't even know what this will do
 
 ```
+
+
+
+### An example of why this is going to be cool:
+
+Programatically running your unit tests in multiple OS's
+
+```javascript
+
+var dockhand = require('dockhand')
+  , environments = ["ubuntu:12.10", "ubuntu:11.10"]
+
+environments.forEach(function(e){
+  var env = dockhand(e);
+  var proc = dockhand.DockerProcess.spawn("git", ["clone", "github.com/my/repo"])
+  proc.on('close', function(code){
+    proc.exec("make", ["test"]);
+  })
+})
+
+```
+
+
