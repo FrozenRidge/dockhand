@@ -1,6 +1,6 @@
 {
   "name": "dockhand",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Node.JS interface to Docker",
   "main": "index.js",
   "scripts": {
@@ -15,13 +15,12 @@
     "lxc",
     "container"
   ],
-  "author": "Niall O'Higgins",
+  "author": "Frozen Ridge <hi@frozenridge.co> (http://frozenridge.co)",
+  "contributors" : ["Niall O'Higgins", "Peter Braden"]
   "license": "BSD",
   "readmeFilename": "README.md",
-  "gitHead": "dcaff3752117775a5425f8882cb3ce1c641210c3",
   "dependencies": {
-    "async": "~0.2.8",
-    "request": "~2.21.0"
+    "docker.js" : "0.1.0"
   },
   "devDependencies" :{
     "vows" : "latest"
