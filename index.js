@@ -1,5 +1,9 @@
 // Node interface to Docker
 // http://docker.io
 
-var async = require('async')
-var request = require('request')
+var docker = require('docker.js')
+
+var dockhand = module.exports = function(image){
+
+
+}
