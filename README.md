@@ -71,7 +71,7 @@ var dockhand = require('dockhand')
 
 environments.forEach(function(e){
   var env = dockhand(e);
-  var proc = dockhand.DockerProcess.spawn("git", ["clone", "github.com/my/repo"])
+  var proc = env.DockerProcess.spawn("git", ["clone", "github.com/my/repo"])
   proc.on('close', function(code){
     proc.exec("make", ["test"]);
   })
